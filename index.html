@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Surf</title>
+</head>
+<body>
+	<header class="header" id="top">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top-inner">
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<a class="header__logo" href="#">
+						<svg class="header__logo-svg" width="77" height="62" viewBox="0 0 77 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+								<path class="header__logo-surge" d="M70.8624 58C71.1641 58 71.4535 57.8853 71.6668 57.681C71.8802 57.4768 72 57.1997 72 56.9109V43.2075C72 42.979 71.8046 42.7854 71.5662 42.7738C68.5849 42.6291 66.2969 41.0131 66.2969 39.4149C66.2969 38.1573 66.7806 37.27 67.2494 36.7056C67.5019 36.4015 67.2421 35.9543 66.8396 36.0038C60.8243 36.7436 62.3025 42.7843 55.0123 42.7843C51.8221 42.7843 49.3093 41.0899 49.3093 39.4149C49.3093 38.1573 49.793 37.27 50.2617 36.7056C50.5143 36.4015 50.2544 35.9543 49.852 36.0038C43.8366 36.7436 45.3149 42.7843 38.0247 42.7843C34.8345 42.7843 32.3216 41.0899 32.3216 39.4149C32.3216 38.1573 32.8053 37.27 33.2741 36.7056C33.5266 36.4015 33.2667 35.9543 32.8643 36.0038C26.8489 36.7436 28.3272 42.7843 21.037 42.7843C17.8468 42.7843 15.334 41.0899 15.334 39.4149C15.334 38.1573 15.8177 37.27 16.2864 36.7056C16.5389 36.4015 16.2791 35.9543 15.8766 36.0038C9.86127 36.7436 11.3396 42.7843 4.04935 42.7843L4.00015 56.7417C3.98928 57.4336 4.57206 58 5.29483 58H70.8624Z" fill="#76DFFF"/>
+								<path class="header__logo-surge" d="M4.86243 58C5.16413 58 5.45348 57.8853 5.66681 57.681C5.88015 57.4768 6 57.1997 6 56.9109V43.2075C6 42.979 5.80456 42.7854 5.56617 42.7738C2.58485 42.6291 0.29694 41.0131 0.29694 39.4149C0.29694 38.1573 0.780645 37.27 1.2494 36.7056C1.50192 36.4015 1.24206 35.9543 0.839632 36.0038C-5.17574 36.7436 -3.69745 42.7843 -10.9877 42.7843C-14.1779 42.7843 -16.6907 41.0899 -16.6907 39.4149C-16.6907 38.1573 -16.207 37.27 -15.7383 36.7056C-15.4857 36.4015 -15.7456 35.9543 -16.148 36.0038C-22.1634 36.7436 -20.6851 42.7843 -27.9753 42.7843C-31.1655 42.7843 -33.6784 41.0899 -33.6784 39.4149C-33.6784 38.1573 -33.1947 37.27 -32.7259 36.7056C-32.4734 36.4015 -32.7333 35.9543 -33.1357 36.0038C-39.1511 36.7436 -37.6728 42.7843 -44.963 42.7843C-48.1532 42.7843 -50.666 41.0899 -50.666 39.4149C-50.666 38.1573 -50.1823 37.27 -49.7136 36.7056C-49.4611 36.4015 -49.7209 35.9543 -50.1234 36.0038C-56.1387 36.7436 -54.6604 42.7843 -61.9507 42.7843L-61.9999 56.7417C-62.0107 57.4336 -61.4279 58 -60.7052 58H4.86243Z" fill="#76DFFF"/>
+							</g>
+							<rect x="3px" y="3px" width="72" height="57" rx="2.5" stroke="#031F46" stroke-width="5"/>
+							<defs>
+								<clipPath id="clip0">
+									<rect width="70" height="56.3636" fill="white" transform="translate(3 4.02588)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<a class="tel-btn tel-btn-mobile" href="tel:+380990805413"><img src="images/tel.svg" alt=""></a>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">О нас</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">Команда</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">Курсы</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">Галерея</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">Отзывы</a>
+							</li>
+						</ul>
+						<a href="tel:+380990805413" class="header__menu-tel">+380990805413</a>
+						<select class="filter-style header__menu-location">
+							<option>Харьков</option>
+							<option>Киев</option>
+							<option>Москва</option>
+							<option>Санкт-Петербург</option>
+						</select>
+						<div class="header__main-social-mobile header__social">
+							<ul class="header__social-list social-list">
+								<li class="header__social-items social-list__item">
+									<a class="header__social-link social-list__link" href="#">
+										<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14 7.1901C10.2315 7.1901 7.19004 10.2315 7.19004 14.0001C7.19004 17.7686 10.2315 20.81 14 20.81C17.7686 20.81 20.81 17.7686 20.81 14.0001C20.81 10.2315 17.7686 7.1901 14 7.1901ZM14 18.426C11.5629 18.426 9.57403 16.4372 9.57403 14.0001C9.57403 11.5629 11.5629 9.57408 14 9.57408C16.4371 9.57408 18.426 11.5629 18.426 14.0001C18.426 16.4372 16.4371 18.426 14 18.426ZM21.0889 5.32408C20.209 5.32408 19.4984 6.03463 19.4984 6.91451C19.4984 7.79439 20.209 8.50494 21.0889 8.50494C21.9688 8.50494 22.6793 7.79772 22.6793 6.91451C22.6796 6.70558 22.6386 6.49865 22.5588 6.30557C22.4789 6.11249 22.3618 5.93706 22.2141 5.78932C22.0663 5.64159 21.8909 5.52445 21.6978 5.44461C21.5047 5.36478 21.2978 5.32382 21.0889 5.32408ZM27.2746 14.0001C27.2746 12.1672 27.2912 10.351 27.1883 8.52154C27.0854 6.39654 26.6006 4.51061 25.0467 2.9567C23.4895 1.39947 21.6068 0.918029 19.4818 0.815099C17.649 0.712169 15.8328 0.728771 14.0033 0.728771C12.1705 0.728771 10.3543 0.712169 8.52481 0.815099C6.39981 0.918029 4.51387 1.40279 2.95997 2.9567C1.40274 4.51393 0.921294 6.39654 0.818364 8.52154C0.715435 10.3544 0.732036 12.1706 0.732036 14.0001C0.732036 15.8295 0.715435 17.6491 0.818364 19.4786C0.921294 21.6036 1.40606 23.4895 2.95997 25.0434C4.51719 26.6006 6.39981 27.0821 8.52481 27.185C10.3576 27.2879 12.1738 27.2713 14.0033 27.2713C15.8361 27.2713 17.6523 27.2879 19.4818 27.185C21.6068 27.0821 23.4928 26.5973 25.0467 25.0434C26.6039 23.4862 27.0854 21.6036 27.1883 19.4786C27.2945 17.6491 27.2746 15.8329 27.2746 14.0001ZM24.3527 21.8294C24.1104 22.4337 23.8182 22.8852 23.35 23.3501C22.8818 23.8182 22.4336 24.1104 21.8293 24.3528C20.0828 25.0467 15.9357 24.8907 14 24.8907C12.0643 24.8907 7.91387 25.0467 6.16739 24.3561C5.56309 24.1137 5.11153 23.8215 4.64669 23.3534C4.17852 22.8852 3.88633 22.437 3.64395 21.8327C2.95333 20.0829 3.10938 15.9358 3.10938 14.0001C3.10938 12.0643 2.95333 7.91393 3.64395 6.16744C3.88633 5.56315 4.17852 5.11158 4.64669 4.64674C5.11485 4.1819 5.56309 3.88639 6.16739 3.64401C7.91387 2.95338 12.0643 3.10943 14 3.10943C15.9357 3.10943 20.0861 2.95338 21.8326 3.64401C22.4369 3.88639 22.8885 4.17858 23.3533 4.64674C23.8215 5.1149 24.1137 5.56315 24.3561 6.16744C25.0467 7.91393 24.8906 12.0643 24.8906 14.0001C24.8906 15.9358 25.0467 20.0829 24.3527 21.8294Z" fill="#fff"/>
+										</svg>
+									</a>
+								</li>
+								<li class="header__social-items social-list__item">
+									<a class="header__social-link social-list__link" href="#">
+										<svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M30.8413 1.30088C30.4401 0.982627 29.9559 0.774069 29.4403 0.697405C28.9246 0.62074 28.3968 0.678838 27.913 0.865513L2.65923 10.5873C2.11931 10.7992 1.65972 11.1626 1.34143 11.6294C1.02314 12.0961 0.861207 12.6441 0.877105 13.2006C0.893004 13.7572 1.08599 14.2959 1.43045 14.7455C1.77491 15.195 2.25457 15.534 2.80578 15.7176L7.91404 17.412L10.7606 26.3907C10.7996 26.5105 10.856 26.6245 10.9283 26.7293C10.9395 26.7454 10.955 26.7562 10.9663 26.7737C11.0494 26.8839 11.1496 26.9813 11.2636 27.0626C11.2955 27.0863 11.3284 27.1088 11.3623 27.1298C11.4958 27.2142 11.6436 27.2761 11.7991 27.3125L11.8175 27.3138L11.8259 27.3179C11.9201 27.3359 12.0159 27.3449 12.112 27.3447L12.1373 27.3407C12.2817 27.3384 12.4247 27.3149 12.5615 27.2708C12.5939 27.2601 12.6207 27.244 12.6517 27.2305C12.754 27.1905 12.851 27.1391 12.9406 27.0773C13.0119 27.0195 13.0833 26.9618 13.1548 26.904L16.9623 22.8957L22.6413 27.0908C23.1412 27.462 23.7565 27.6639 24.3901 27.6646C25.0542 27.6638 25.6978 27.4454 26.213 27.0458C26.7282 26.6463 27.0836 26.09 27.2197 25.4703L31.8179 3.94799C31.9219 3.46379 31.8859 2.96175 31.7139 2.49551C31.5419 2.02927 31.2403 1.61635 30.8413 1.30088ZM12.67 17.8393C12.4748 18.025 12.3415 18.2616 12.2867 18.5192L11.8499 20.5402L10.7451 17.0559L16.4734 14.2113L12.67 17.8393ZM24.369 24.9664L17.6571 20.0081C17.3762 19.8014 17.024 19.7033 16.6707 19.7331C16.3173 19.763 15.9888 19.9188 15.7505 20.1693L14.5301 21.4526L14.9613 19.4545L24.9425 9.93693C25.1793 9.70972 25.3232 9.40932 25.3483 9.08988C25.3733 8.77043 25.2779 8.45296 25.0791 8.1947C24.8804 7.93645 24.5914 7.75439 24.2643 7.68136C23.9372 7.60832 23.5935 7.64912 23.2952 7.79639L8.97092 14.9073L3.72175 13.0758L29.0573 3.4132L24.369 24.9664Z" fill="#fff"/>
+										</svg>
+									</a>
+								</li>
+								<li class="header__social-items social-list__item">
+									<a class="header__social-link social-list__link" href="#">
+										<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.0955 28.4958V16.2018H15.243L15.8595 11.3883H11.0955V8.32225C11.0955 6.93325 11.4825 5.98225 13.476 5.98225H16.002V1.69075C14.773 1.55904 13.5376 1.49544 12.3015 1.50025C8.63555 1.50025 6.11855 3.73825 6.11855 7.84675V11.3793H1.99805V16.1928H6.12755V28.4958H11.0955Z" stroke="#fff" stroke-width="2"/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="header__main-info anim-items anim-one-play">
+				<div class="header__main-title"><h1>Let’s Learn How to Windsurf</h1><span id="typed-span"></span></div>
+				<p class="header__main-description">Для этого вам нужно: <span>Вы,</span> <span>доска</span> <span>и ветер.</span></p>
+				<a class="header__main-btn btn" href="#">Подробнее</a>
+				<div class="header__main-social header__social">
+					<ul class="header__social-list social-list">
+						<li class="header__social-items social-list__item"><a class="header__social-link social-list__link" href="#"><img src="images/instagram.svg" alt=""></a></li>
+						<li class="header__social-items social-list__item"><a class="header__social-link social-list__link" href="#"><img src="images/telegram.svg" alt=""></a></li>
+						<li class="header__social-items social-list__item"><a class="header__social-link social-list__link" href="#"><img src="images/facebook.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<img class="header__main-img" src="images/header-img.jpg" alt="">
+			<a class="header__main-btn-mobile btn" href="#">Подробнее</a>
+		</div>
+		<div class="header__bottom header__quote anim-items anim-one-play">
+			<div class="header__quote-inner">
+				<div class="header__quote-text-wrap"><p class="header__quote-text"></p></div>
+				<span class="header__quote-autor anim-items anim-one-play">Майк Дойл</span>
+			</div>
+		</div>
+	</header>
+	<section class="training">
+		<div class="training__inner">
+			<img class="training__img anim-items anim-one-play" src="images/training-img.jpg" alt="">
+			<div class="training__main">
+				<h2 class="training__title title anim-items anim-one-play">Обучение</h2>
+				<div class="training__items">
+					<div class="training__item">
+						<h3 class="training__item-num anim-items anim-one-play anim-one-play">01</h3>
+						<p class="training__item-description anim-items anim-one-play">Вы можете стать одним и райдеров которые покаряют ветер и скорость</p>
+					</div>
+					<div class="training__item">
+						<h3 class="training__item-num anim-items anim-one-play anim-one-play">02</h3>
+						<p class="training__item-description anim-items anim-one-play">Так же у нас есть лагерь Виндсерфинга для детей, Родители и их дети сами могут выбирать продолжительность занятий</p>
+					</div>
+					<div class="training__item">
+						<h3 class="training__item-num anim-items anim-one-play anim-one-play">03</h3>
+						<p class="training__item-description anim-items anim-one-play">Разнообразные места для катания и обучения, на любом споте мы приймем вас комфортом</p>
+					</div>
+					<div class="training__item">
+						<h3 class="training__item-num anim-items anim-one-play anim-one-play">04</h3>
+						<p class="training__item-description anim-items anim-one-play">Это опыт, от которого невозможно отказаться Независимо от ваших умений, мы гарантируем, что поставим вас на доску в кратчайщие сроки</p>
+					</div>
+				</div>
+				<a href="#" class="training__main-btn btn">Выбор Курса</a>
+			</div>
+		</div>
+	</section>
+	<section class="advantages">
+		<div class="container">
+			<h2 class="advantages__title title anim-items anim-one-play">Наши Преимущества</h2>
+			<div class="advantages__items">
+				<div class="advantages__item anim-items anim-one-play">
+					<img class="advantages__item-img" src="images/advantages-img1.svg" alt="">
+					<h4 class="advantages__item-title title-small">Удивительный опыт</h4>
+					<p class="advantages__item-text">Займитесь Виндсерфингом с опытными тренерами и максимально безопасно для вас.</p>
+				</div>
+				<div class="advantages__item anim-items anim-one-play">
+					<img class="advantages__item-img" src="images/advantages-img2.svg" alt="">
+					<h4 class="advantages__item-title title-small">Талантлевые тренера</h4>
+					<p class="advantages__item-text">С обширными знаниями в своем деле, принимающие участия в самых пристижных соревнованиях.</p>
+				</div>
+				<div class="advantages__item anim-items anim-one-play">
+					<img class="advantages__item-img" src="images/advantages-img3.svg" alt="">
+					<h4 class="advantages__item-title title-small">Фокус скорости</h4>
+					<p class="advantages__item-text">Максимизировать производительность и удовольствие, увеличение скорости и конроля над ней, когда вы находитесь на воде.</p>
+				</div>
+				<div class="advantages__item anim-items anim-one-play">
+					<img class="advantages__item-img" src="images/advantages-img4.svg" alt="">
+					<h4 class="advantages__item-title title-small">Достижение целей</h4>
+					<p class="advantages__item-text">Мы предлагаем комплексные программы благодоря которым вы выучите основные элементы виндсерфинга  и покорите свой первый порыв.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="staff">
+		<div class="container">
+			<h2 class="staff__title title anim-items anim-one-play">Наши тренера</h2>
+			<div class="staff__items">
+				<div class="staff__item anim-items anim-one-play">
+					<img  class="staff__item-img" src="images/staff-img1.jpg" alt="">
+					<h3 class="staff__item-title title-small">Данил Альтапов</h3>
+					<p class="staff__item-description">Чемпион Украины по слалому 2018 года</p>
+					<p class="staff__item-text">Знание правильной техники катания, чувство выдержки и понимания ученика, позволяют мне быстро построить оптимальную программу занятий, которая выводит ученика на новый уровень.</p>
+				</div>
+				<div class="staff__item anim-items anim-one-play">
+					<img  class="staff__item-img" src="images/staff-img2.jpg" alt="">
+					<h3 class="staff__item-title title-small">Алексей Карачевцев</h3>
+					<p class="staff__item-description">Чемпион Украины по Фристайлу</p>
+					<p class="staff__item-text">Имея за плечами более 10 лет опыта обучения виндсерфингу, я легко нахожу подход к ученику. Довожу каждого до прогресса в технике и, самое главное, до получения максимального удовольствия от занятий виндсерфингом.</p>
+				</div>
+				<div class="staff__item anim-items anim-one-play">
+					<img  class="staff__item-img" src="images/staff-img3.jpg" alt="">
+					<h3 class="staff__item-title title-small">Сергей Иолкин</h3>
+					<p class="staff__item-description">Призер престижных соревнований 2016-2019 г.</p>
+					<p class="staff__item-text">Сергей побывал в Бердянске в 2011 году, после чего проникся темой парусного спорта. В 2016 Сергей вернулся в Бердянск уже в качестве инструктора. Является тренером детского спортивного лагеря и, конечно же опытным инструктором школы виндсерфинга.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="courses">
+		<div class="container">
+			<div class="courses__inner">
+				<h2 class="courses__title title anim-items anim-one-play">Курсы</h2>
+				<div class="courses__items">
+					<div class="courses__item anim-items anim-one-play">
+						<h3 class="courses__item-title title-small">Новичок</h3>
+						<div class="courses__item-top">
+							<p>10 занятий</p>
+							<p>до 6 чел. в группе</p>
+							<p>20 часов</p>
+						</div>
+						<div class="courses__item-settings">
+							<p class="courses__item-setting">Вкл.снаряжение</p>
+							<p class="courses__item-setting">Поворот Оверштаг</p>
+							<p class="courses__item-setting">Поворот Фордевинд</p>
+							<p class="courses__item-setting">Управление парусом</p>
+							<p class="courses__item-setting">Старт с берега</p>
+							<p class="courses__item-setting">Вводный урок использования трапеции</p>
+						</div>
+						<p class="courses__item-price">10000 грн</p>
+						<div class="courses__item-btns">
+							<a href="#" class="courses__item-buy btn">Купить</a>
+							<a href="#" class="courses__item-give">Подарить</a>
+						</div>
+					</div>
+					<div class="courses__item anim-items anim-one-play">
+						<h3 class="courses__item-title title-small">Любитель</h3>
+						<div class="courses__item-top">
+							<p>10 занятий</p>
+							<p>до 6 чел. в группе</p>
+							<p>20 часов</p>
+						</div>
+						<div class="courses__item-settings">
+							<p class="courses__item-setting">Вкл.снаряжение</p>
+							<p class="courses__item-setting">Водный старт</p>
+							<p class="courses__item-setting">Быстрый оверштаг</p>
+							<p class="courses__item-setting">Вход в ножные петли</p>
+							<p class="courses__item-setting">Выход на слиссирование</p>
+							<p class="courses__item-setting">Лайт винд фристайл</p>
+						</div>
+						<p class="courses__item-price">10000 грн</p>
+						<div class="courses__item-btns">
+							<a href="#" class="courses__item-buy btn">Купить</a>
+							<a href="#" class="courses__item-give">Подарить</a>
+						</div>
+					</div>
+					<div class="courses__item anim-items anim-one-play">
+						<h3 class="courses__item-title title-small">Эксперт</h3>
+						<div class="courses__item-top">
+							<p>12 занятий</p>
+							<p>до 1 чел. в группе</p>
+							<p>24 часа</p>
+						</div>
+						<div class="courses__item-settings">
+							<p class="courses__item-setting">Вкл.снаряжение</p>
+							<p class="courses__item-setting">Скоростное глиссирование</p>
+							<p class="courses__item-setting">Вулкан и другие трюки</p>
+							<p class="courses__item-setting">Глиссирующий Фордевинд</p>
+							<p class="courses__item-setting">Индивидуальный график</p>
+							<p class="courses__item-setting">Видео разбор тренировок</p>
+						</div>
+						<p class="courses__item-price">40000 грн</p>
+						<div class="courses__item-btns">
+							<a href="#" class="courses__item-buy btn">Купить</a>
+							<a href="#" class="courses__item-give">Подарить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="review">
+		<div class="container">
+			<h2 class="review__title title anim-items anim-one-play">Отзывы</h2>
+			<div class="review__main">
+				<div class="review__main-slider review__slider anim-items anim-one-play">
+					<div class="review__slider-item">
+						<div class="review__slider-item-wrap">
+							<img class="review__slider-item-img" src="images/review-img1.jpg" alt="">
+							<div class="review__slider-item-info">
+								<p class="review__slider-item-text">Это незабываемое ощущение от того,что ты управляешь парусом надуваемый ветром. Давно мечтала заняться виндсерфингом и рада,что моя мечта смогла сбыться в Харькове! Из водных видов спорта – однозначно, теперь, виндсерфинг самый любимый!</p>
+								<div class="review__slider-item-bottom">
+									<p class="review__slider-item-autor">Екатерина</p>
+									<p class="review__slider-item-data">Катаю 1 год.</p>
+								</div>
+							</div>
+						</div>
+						<div class="review__slider-item-wrap">
+							<img class="review__slider-item-img" src="images/review-img2.jpg" alt="">
+							<div class="review__slider-item-info">
+								<p class="review__slider-item-text">Перешёл на виндсёрфинг с яхты, ни капли не пожалел. Всё очень подробно и доступно объяснили. Видно, что учат люди знающие и болеющие своим делом. Теперь каждый сезон жду тот момент когда смогу выйти на воду с  Windsurf School. Всем советую, идите и ни капли не пожалеете!</p>
+								<div class="review__slider-item-bottom">
+									<p class="review__slider-item-autor">Антон</p>
+									<p class="review__slider-item-data">Катаю 2 года.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="review__slider-item">
+						<div class="review__slider-item-wrap">
+							<img class="review__slider-item-img" src="images/review-img1.jpg" alt="">
+							<div class="review__slider-item-info">
+								<p class="review__slider-item-text">Это незабываемое ощущение от того,что ты управляешь парусом надуваемый ветром. Давно мечтала заняться виндсерфингом и рада,что моя мечта смогла сбыться в Харькове! Из водных видов спорта – однозначно, теперь, виндсерфинг самый любимый!</p>
+								<div class="review__slider-item-bottom">
+									<p class="review__slider-item-autor">Екатерина</p>
+									<p class="review__slider-item-data">Катаю 1 год.</p>
+								</div>
+							</div>
+						</div>
+						<div class="review__slider-item-wrap">
+							<img class="review__slider-item-img" src="images/review-img2.jpg" alt="">
+							<div class="review__slider-item-info">
+								<p class="review__slider-item-text">Перешёл на виндсёрфинг с яхты, ни капли не пожалел. Всё очень подробно и доступно объяснили. Видно, что учат люди знающие и болеющие своим делом. Теперь каждый сезон жду тот момент когда смогу выйти на воду с  Windsurf School. Всем советую, идите и ни капли не пожалеете!</p>
+								<div class="review__slider-item-bottom">
+									<p class="review__slider-item-autor">Антон</p>
+									<p class="review__slider-item-data">Катаю 2 года.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a data-fancybox="" data-src="#modal" href="javascript:;" class="review__btn btn">Оставить отзыв</a>
+				<form id="modal" action="#" class="review__form review__main-form anim-items anim-one-play">
+					<h3 class="review__form-title title-small">Оставить отзыв</h3>
+					<input type="text" class="review__form-input review__form-text" placeholder="Имя">
+					<input type="text" class="review__form-input review__form-text" placeholder="Стаж катания">
+					<textarea class="review__form-textarea review__form-text" placeholder="Коментарий"></textarea>
+					<button class="review__form-photo"><img src="images/btn-photo.svg" alt="">Прикрепить фото</button>
+					<button class="review__form-btn btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<h2 class="gallery__title title review__main-form anim-items anim-one-play">Фото галерея</h2>
+		<div class="gallery__slider review__main-form anim-items anim-one-play">
+			<div class="gallery__slider-item">
+				<a data-fancybox="images-one" href="images/galery-img1.jpg"><img src="images/galery-img1.jpg" alt=""></a>
+				<a data-fancybox="images-one" href="images/galery-img2.jpg"><img src="images/galery-img2.jpg" alt=""></a>
+				<a data-fancybox="images-one" href="images/galery-img3.jpg"><img src="images/galery-img3.jpg" alt=""></a>
+				<a data-fancybox="images-one" href="images/galery-img4.jpg"><img src="images/galery-img4.jpg" alt=""></a>
+				<a data-fancybox="images-one" href="images/galery-img5.jpg"><img src="images/galery-img5.jpg" alt=""></a>
+				<a data-fancybox="images-one" href="images/galery-img6.jpg"><img src="images/galery-img6.jpg" alt=""></a>
+			</div>
+			<div class="gallery__slider-item">
+				<a data-fancybox="images-two" href="images/galery-img1.jpg"><img src="images/galery-img1.jpg" alt=""></a>
+				<a data-fancybox="images-two" href="images/galery-img2.jpg"><img src="images/galery-img2.jpg" alt=""></a>
+				<a data-fancybox="images-two" href="images/galery-img3.jpg"><img src="images/galery-img3.jpg" alt=""></a>
+				<a data-fancybox="images-two" href="images/galery-img4.jpg"><img src="images/galery-img4.jpg" alt=""></a>
+				<a data-fancybox="images-two" href="images/galery-img5.jpg"><img src="images/galery-img5.jpg" alt=""></a>
+				<a data-fancybox="images-two" href="images/galery-img6.jpg"><img src="images/galery-img6.jpg" alt=""></a>
+			</div>
+			<div class="gallery__slider-item">
+				<a data-fancybox="images-three" href="images/galery-img1.jpg"><img src="images/galery-img1.jpg" alt=""></a>
+				<a data-fancybox="images-three" href="images/galery-img2.jpg"><img src="images/galery-img2.jpg" alt=""></a>
+				<a data-fancybox="images-three" href="images/galery-img3.jpg"><img src="images/galery-img3.jpg" alt=""></a>
+				<a data-fancybox="images-three" href="images/galery-img4.jpg"><img src="images/galery-img4.jpg" alt=""></a>
+				<a data-fancybox="images-three" href="images/galery-img5.jpg"><img src="images/galery-img5.jpg" alt=""></a>
+				<a data-fancybox="images-three" href="images/galery-img6.jpg"><img src="images/galery-img6.jpg" alt=""></a>
+			</div>
+		</div>
+		<a class="gallery__instagram" href="#"><img src="images/instagram.svg" alt="">@WINDSURFINGSHOOL</a>
+	</section>
+	<footer class="footer">
+		<div class="footer__items">
+			<div class="footer__item">
+				<h5 class="footer__item-title title-small">Адресса наших офисов</h5>
+				<ul class="footer__item-list">
+					<li class="footer__item-item">г. Харьков, ул. Пушкинская 32</li>
+					<li class="footer__item-item">Харьковская область, Волчанский район, Старый Салтов ул. Новодоновская, 1</li>
+				</ul>
+				<ul class="footer__social-list social-list">
+					<li class="footer__social-items social-list__item"><a class="footer__social-link social-list__link" href="#"><img src="images/instagram.svg" alt=""></a></li>
+					<li class="footer__social-items social-list__item"><a class="footer__social-link social-list__link" href="#"><img src="images/telegram.svg" alt=""></a></li>
+					<li class="footer__social-items social-list__item"><a class="footer__social-link social-list__link" href="#"><img src="images/facebook.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h5 class="footer__item-title title-small">Контакты:</h5>
+				<ul class="footer__item-list footer__item-contact">
+					<li class="footer__item-item">+380990805413</li>
+					<li class="footer__item-item">+380930905345</li>
+				</ul>
+				<h5 class="footer__item-title title-small footer__item-title-email">Почта:</h5>
+				<ul class="footer__item-list">
+					<li class="footer__item-item">windschool@gmail.com</li>
+				</ul>
+				<a class="footer__top-btn" href="#top"><img src="images/arrow-top.svg" alt=""></a>
+			</div>
+		</div>
+		<div class="footer__map">
+			<img class="footer__map-img" src="images/map.jpg" alt="">
+			<img class="footer__map-pin" src="images/map-pin.svg" alt="">
+		</div>
+	</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
